@@ -28,7 +28,7 @@
     "prettier": "^1.5.3"
   },
   "dependencies": {
-    "app-portfolio-core": "git+ssh://git@github.com:darcusfenix/app-portfolio-core.git",
+    "app-portfolio-core": "git://github.com/darcusfenix/app-portfolio-core.git",
     "express": "^4.15.4",
     "helmet": "^3.8.1",
     "log4js": "^2.3.3",
