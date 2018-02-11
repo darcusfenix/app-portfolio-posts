@@ -4,24 +4,13 @@ import { Router } from "express";
 import {
     get,
     getById,
-    patch,
-    post,
-    preRequestById,
-    put,
-    remove
+    preRequestById
 } from "./PostController";
 
 const userRouter = Router();
 
-userRouter.route("/posts/").post(post).get(get);
-
+userRouter.route("/posts/").get(get);
 userRouter.use("/posts/:id", preRequestById);
-
-userRouter
-    .route("/posts/:id")
-    .get(getById)
-    .put(put)
-    .patch(patch)
-    .delete(remove);
+userRouter.route("/posts/:id").get(getById);
 
 export default userRouter;

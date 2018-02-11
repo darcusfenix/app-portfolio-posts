@@ -1,4 +1,5 @@
 // @flow
+require('dotenv').config();
 import bodyParser from "body-parser";
 import express from "express";
 import log4js from "log4js";
