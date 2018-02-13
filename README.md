@@ -1,6 +1,15 @@
- docker build -t pets-app/micro-service-users:v0.0.1 .
+# Micro Services Posts
+
+> This service responds a lists of posts and one object post
+
+## Build image
+```
+docker build -t darcusfenix/portfolio-posts:0.1.1.0 .
+```
+
+## Run container
+```
+docker run -it -p 3000:3000 -d darcusfenix/portfolio-posts:0.1.0
+```
 
 
-docker run -it --name micro-service-users \
--p 3000:3000 -d \
-pets-app/micro-service-users:v0.0.1
