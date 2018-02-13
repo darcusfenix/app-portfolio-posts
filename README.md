@@ -1,4 +1,4 @@
-# Micro Services Posts
+# Micro Service Posts
 
 > This service responds a lists of posts and one object post
 
